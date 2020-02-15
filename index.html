@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Find Me</title>
+	<style type="text/css">
+		.box1 {
+			background-image: url(1.jpeg);
+			width: 1350px;
+			height: 640px;
+		}	
+		.box2{
+			background-color:  #e3c284 ;
+			height: 100px;
+			width: 200px;
+			padding-top: 20px;
+			margin-left: 50px;
+			border-radius: 20px;
+			
+		}
+		.box3{
+			margin-left: 50px;
+			
+		}
+		.img {
+			width: 200px;
+			height: 300px;
+			position: absolute;
+		}
+		.text {
+			text-align: center;
+			padding-top: 55px;
+			padding-left: 20px;
+			position: absolute;
+		}
+		.img1 {
+			position: absolute;
+			width: 25px;
+			height: 25px;
+			left: 420px;
+			top: 400px;
+		}
+		.img2 {
+			position: absolute;
+			width: 300px;
+			height: 200px;
+			left: 550px;
+			top: 310px;
+		}
+		.img3{
+			position: absolute;
+			width: 20px;
+			height: 20px;
+			left: 1185px;
+			top: 550px;
+		}
+		.img4 {
+			position: absolute;
+			width: 15px;
+			height: 15px;
+			left: 500px;
+			top: 385px;
+		}
+	
+		.img5{
+			position: absolute;
+			width: 20px;
+			height: 20px;
+			left: 1215px;
+			top: 525px;
+		}
+		.img6{  
+			position: absolute;
+			width: 25px;
+			height: 25px;
+			left: 960px;
+			top: 225px;
+		}
+		.img7{  
+			position: absolute;
+			width: 20px;
+			height: 20px;
+			left: 230px;
+			top: 595px;
+		}
+		.n1 {
+			text-decoration: none;
+			margin-top: 0px;
+			margin-bottom: 0px;
+		}
+		.n2 {
+			text-decoration: none;
+			margin-top: 0px;
+			margin-bottom: 0px;
+		}
+		.n3 {
+			text-decoration: none;
+			margin-top: 0px;
+			margin-bottom: 0px;
+		}
+		.n4 {
+			text-decoration: none;
+			margin-top: 0px;
+			margin-bottom: 0px;
+		}
+		.n5 {
+			text-decoration: none;
+			margin-top: 0px;
+			margin-bottom: 0px;
+		}
+		.n6 {
+			text-decoration: none;
+			margin-top: 0px;
+			margin-bottom: 0px;
+		}
+		.n7 {
+			text-decoration: none;
+			margin-top: 0px;
+			margin-bottom: 0px;
+		}
+	</style>
+</head>
+<body>
+	<div class="box1">
+		<div class="box2"><h1>Очки:<span class="score"></span></h1></div>
+		<div class="box3">
+			<img src="3.png" class="img">
+				<h3 class="text"><span>НАЙТИ:
+					<p class="n1">Золотая чаша</p>
+					<p class="n2">Ожерелье</p>
+					<p class="n3">Перстень</p>
+					<p class="n4">Статуэтка</p>
+					<p class="n5">Древняя пластина</p>
+					<p class="n6">Древняя ваза</p>
+					<p class="n7">Пирамида</p></span></h3>
+		</div>
+		<img src="4.png" class="img1">
+		<img src="5.png" class="img2">
+		<img src="6.png"  class="img3">
+		<img src="8.png" class="img4">
+		<img src="9.png" class="img5">
+		<img src="10.png" class="img6">
+		<img src="11.png" class="img7">
+
+	</div>
+	<script type="text/javascript">
+	let number = 0;
+	document.querySelector(".score").innerHTML = number;
+
+	document.querySelector(".img1").onclick = function(){
+		alert("Молодец!Ты нашел чашу.");
+		document.querySelector(".img1").style.display = "none";
+		number = number+1;
+		document.querySelector(".score").innerHTML = number;
+		document.querySelector(".n1").style.textDecoration = "line-through";
+	}
+	document.querySelector(".img2").onclick = function(){
+		alert("Класс!Ты нашел ожерелье.");
+		document.querySelector(".img2").style.display = "none";
+		number = number+1;
+		document.querySelector(".score").innerHTML = number;
+		document.querySelector(".n2").style.textDecoration = "line-through";
+	}
+	document.querySelector(".img3").onclick = function(){
+		alert("Ты нашел перстень. Продолжай в том же духе)");
+		document.querySelector(".img3").style.display = "none";
+		number = number+1;
+		document.querySelector(".score").innerHTML = number;
+		document.querySelector(".n3").style.textDecoration = "line-through";
+	}
+	document.querySelector(".img4").onclick = function(){
+		alert("Вау супер!Ты нашел статуэтку.");
+		document.querySelector(".img4").style.display = "none";
+		number = number+3;
+		document.querySelector(".score").innerHTML = number;
+		document.querySelector(".n4").style.textDecoration = "line-through";
+	}
+	document.querySelector(".img5").onclick = function(){
+		alert("Найдена древняя магическая пластина.");
+		document.querySelector(".img5").style.display = "none";
+		number = number+2;
+		document.querySelector(".score").innerHTML = number;
+		document.querySelector(".n5").style.textDecoration = "line-through";
+	}
+	document.querySelector(".img6").onclick = function(){
+		alert("Поздравляю! Ты успешно нашел вазу.");
+		document.querySelector(".img6").style.display = "none";
+		number = number+1;
+		document.querySelector(".score").innerHTML = number;
+		document.querySelector(".n6").style.textDecoration = "line-through";
+	}
+	document.querySelector(".img7").onclick = function(){
+		alert("Ты нашел египетскую пирамиду.");
+		document.querySelector(".img7").style.display = "none";
+		number = number+1;
+		document.querySelector(".score").innerHTML = number;
+		document.querySelector(".n7").style.textDecoration = "line-through";
+	}
+
+	</script>
+</body>
+</html>
+
+
